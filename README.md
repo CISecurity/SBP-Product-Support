@@ -1,4 +1,5 @@
-# SBP-Product-Support
+#Find the Latest CIS AMIs: a Python Script
+
 CIS has created a proof-of-concept Python script that uses the AWS API to discover the latest CIS AMI offered in the AWS Marketplace for a named benchmark. 
 We encourage anyone using CIS AMIs in the AWS marketplace to use either this script, or something like it, so that you can be assured that you're always using the latest released AMI for that particular benchmark line.
 
