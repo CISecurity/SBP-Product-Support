@@ -2,6 +2,7 @@ Find the Latest CIS AMIs using a Python Script
 
 CIS has created a proof-of-concept Python script that uses the AWS API to discover the latest CIS AMI offered in the AWS Marketplace for a named benchmark. 
 We encourage anyone using CIS AMIs in the AWS marketplace to use either this script, or something like it, so that you can be assured that you're always using the latest released AMI for that particular benchmark line.
+This script presupposes that you know which AMI you're interested in based on the benchmark that AMI represents. The code could be improved, so that the latest AMI based on the latest benchmark is always selected.
 
 This script has been tested and run via AWS CLI. Please remember to set up your unique AWS configuration prior to running this script via command prompt. Information regarding how to do this can be found here: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html.
 
