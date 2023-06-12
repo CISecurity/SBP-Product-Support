@@ -3,10 +3,12 @@
 #
 # This code relies on the boto3 library: https://protect-us.mimecast.com/s/cRmxClYkJjUOmPJns9w6ZN?domain=boto3.readthedocs.io
 # You may need to `pip install boto3` before this script will work.
+
 import boto3
 import re
 import json
 
+#Please replace the region name to reflect the region you are located
 ec2client = boto3.client('ec2', region_name='us-east-1')
 awsMarketplaceId = '679593333241'
 
