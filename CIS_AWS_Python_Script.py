@@ -10,11 +10,8 @@ import json
 ec2client = boto3.client('ec2', region_name='us-east-1')
 awsMarketplaceId = '679593333241'
 
-# AC TEST - The Image ID used by the CIS Ubuntu 22.04 HIs
-ubuntu2204HardenedImageID = '*80ec131e-1631-4b92-92cc-ef35c56c3ec8*'
-
 # Replace benchmarkName and profileLevel values with what you're looking for
-benchmarkName = 'CIS Microsoft Windows Server 2012 R2 Benchmark'
+benchmarkName = 'CIS Ubuntu Linux 22.04 LTS Benchmark'
 profileLevel = 'Level 1'
 amiNamePattern = benchmarkName + '.*' + profileLevel + '*'
 
@@ -33,9 +30,6 @@ cis_amis = ec2client.describe_images(
 latest_version = -1
 latest_ami = []
 local_versions = []
-
-# AC - DEBUG - print all results with readable JSON formatting
-print(json.dumps(cis_amis, indent=4))
 
 if cis_amis['Images']:
     # For each of the AMIs with names matching the above pattern, get all local versions
