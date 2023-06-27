@@ -20,7 +20,6 @@ amiNamePattern = benchmarkName + '*' + profileLevel + '*'
 
 # Find AMIs of a specific name pattern
 cis_amis = ec2client.describe_images(
-    DryRun=False,
     Owners=[awsMarketplaceId],
     Filters=[
         {
