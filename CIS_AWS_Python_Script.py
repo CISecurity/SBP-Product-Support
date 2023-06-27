@@ -25,7 +25,7 @@ cis_amis = ec2client.describe_images(
     Filters=[
         {
             'Name': 'name',
-            'Values': [ubuntu2204HardenedImageID]
+            'Values': [amiNamePattern]
         }
         ]
 )
