@@ -15,7 +15,7 @@ awsMarketplaceId = '679593333241'
 # Replace benchmarkName and profileLevel values with what you're looking for
 benchmarkName = 'CIS Ubuntu Linux 22.04 LTS Benchmark'
 profileLevel = 'Level 1'
-amiNamePattern = benchmarkName + '.*' + profileLevel + '*'
+amiNamePattern = benchmarkName + '*' + profileLevel + '*'
 
 
 # Find AMIs of a specific name pattern
